@@ -1,0 +1,312 @@
+fileFormatVersion: 2
+guid: 678d79ca07d61b343be14411090c520c
+timeCreated: 1466597096
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Medals_0
+    21300002: Medals_1
+    21300004: Medals_2
+    21300006: Medals_3
+    21300008: Medals_4
+    21300010: Medals_5
+    21300012: Medals_6
+    21300014: Medals_7
+    21300016: Medals_8
+    21300018: Medals_9
+    21300020: Medals_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Medals_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 803
+        width: 158
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 18, y: 91}
+        - {x: -23, y: 91}
+        - {x: -79, y: 51}
+        - {x: -79, y: -50}
+        - {x: -16, y: -91}
+        - {x: 15, y: -91}
+        - {x: 79, y: -58}
+        - {x: 79, y: 54}
+        - {x: 72, y: 63}
+    - name: Medals_1
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 803
+        width: 158
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 91}
+        - {x: -79, y: 51}
+        - {x: -79, y: -50}
+        - {x: -16, y: -91}
+        - {x: 17, y: -91}
+        - {x: 79, y: -54}
+        - {x: 79, y: 52}
+        - {x: 26, y: 91}
+    - name: Medals_2
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 803
+        width: 158
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: 91}
+        - {x: -79, y: 51}
+        - {x: -79, y: -50}
+        - {x: -16, y: -91}
+        - {x: 17, y: -91}
+        - {x: 79, y: -54}
+        - {x: 79, y: 52}
+        - {x: 26, y: 91}
+    - name: Medals_3
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 803
+        width: 228
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113, y: 94.5}
+        - {x: 98, y: 94.5}
+        - {x: 47, y: 70.5}
+        - {x: 0, y: 92.5}
+        - {x: -29, y: 94.5}
+        - {x: -108, y: 94.5}
+        - {x: -114, y: 91.5}
+        - {x: -114, y: 4.5}
+        - {x: -88, y: -59.5}
+        - {x: -16, y: -94.5}
+        - {x: 26, y: -94.5}
+        - {x: 86, y: -49.5}
+        - {x: 114, y: 9.5}
+        - {x: 114, y: 90.5}
+    - name: Medals_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 543
+        width: 228
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: 90.5}
+        - {x: 109, y: 94.5}
+        - {x: 96, y: 94.5}
+        - {x: -58, y: 93.5}
+        - {x: -71, y: 94.5}
+        - {x: -114, y: 94.5}
+        - {x: -114, y: 7.5}
+        - {x: -87, y: -55.5}
+        - {x: -30, y: -89.5}
+        - {x: -16, y: -94.5}
+        - {x: 21, y: -94.5}
+        - {x: 88, y: -50.5}
+        - {x: 112, y: -0.5}
+        - {x: 114, y: 18.5}
+    - name: Medals_5
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 534
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: 91}
+        - {x: 72, y: 87}
+        - {x: 15, y: 114}
+        - {x: -15, y: 114}
+        - {x: -57, y: 73}
+        - {x: -105, y: 90}
+        - {x: -114, y: 86}
+        - {x: -114, y: -27}
+        - {x: -100, y: -75}
+        - {x: -26, y: -114}
+        - {x: 23, y: -114}
+        - {x: 87, y: -59}
+        - {x: 113, y: -12}
+        - {x: 114, y: -4}
+    - name: Medals_6
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 544
+        width: 228
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: -34}
+        - {x: 114, y: 104}
+        - {x: -105, y: 104}
+        - {x: -114, y: 98}
+        - {x: -114, y: -18}
+        - {x: -85, y: -85}
+        - {x: -7, y: -104}
+        - {x: 17, y: -104}
+        - {x: 85, y: -75}
+        - {x: 95, y: -57}
+        - {x: 99, y: -49}
+    - name: Medals_7
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 543
+        width: 228
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: 84.5}
+        - {x: 100, y: 90.5}
+        - {x: 83, y: 104.5}
+        - {x: 56, y: 104.5}
+        - {x: 35, y: 95.5}
+        - {x: -21, y: 104.5}
+        - {x: -85, y: 104.5}
+        - {x: -114, y: 85.5}
+        - {x: -114, y: -22.5}
+        - {x: -107, y: -65.5}
+        - {x: -15, y: -104.5}
+        - {x: 35, y: -104.5}
+        - {x: 87, y: -84.5}
+        - {x: 108, y: -28.5}
+        - {x: 114, y: -3.5}
+    - name: Medals_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 287
+        width: 228
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -114, y: 95}
+        - {x: -114, y: 27}
+        - {x: -106, y: 1}
+        - {x: -91, y: -13}
+        - {x: -82, y: -52}
+        - {x: -47, y: -73}
+        - {x: -19, y: -95}
+        - {x: 19, y: -95}
+        - {x: 85, y: -61}
+        - {x: 114, y: 18}
+        - {x: 114, y: 95}
+    - name: Medals_9
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 287
+        width: 227
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -107.5, y: 95}
+        - {x: -113.5, y: 90}
+        - {x: -113.5, y: 11}
+        - {x: -81.5, y: -49}
+        - {x: -68.5, y: -62}
+        - {x: -29.5, y: -95}
+        - {x: 28.5, y: -95}
+        - {x: 93.5, y: -55}
+        - {x: 113.5, y: -3}
+        - {x: 113.5, y: 94}
+        - {x: 110.5, y: 95}
+    - name: Medals_10
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 282
+        width: 161
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 35.5, y: 94}
+        - {x: -29.5, y: 94}
+        - {x: -80.5, y: 59}
+        - {x: -80.5, y: -65}
+        - {x: -15.5, y: -94}
+        - {x: 12.5, y: -94}
+        - {x: 80.5, y: -53}
+        - {x: 80.5, y: 58}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
