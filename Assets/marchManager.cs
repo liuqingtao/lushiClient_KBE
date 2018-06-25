@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using KBEngine;
 public class marchManager : MonoBehaviour {
     public Text timeText;
     float startTime=0f;
@@ -9,10 +10,25 @@ public class marchManager : MonoBehaviour {
     public void endMarch()
     {
         Debug.Log("结束匹配");
+        Account Me = KBEngineApp.app.player() as Account;
+        if (Me != null)
+        {
+            Me.baseCall("reqStopMarch");
+        }
+        gameObject.SetActive(false);
     }
     public void startMarch()
     {
-
+        if (choosedKzStore == -1)
+        {
+            Debug.LogError("匹配失败没有选择卡组");
+            return;
+        }
+        Account Me = KBEngineApp.app.player() as Account;
+        if(Me != null)
+        {
+            Me.baseCall("reqStartMarch", choosedKzStore);
+        }
     }
     private void OnEnable()
     {
@@ -28,6 +44,8 @@ public class marchManager : MonoBehaviour {
     public void getChoosedKz(int index)
     {
         startTime = Time.time;
+        choosedKzStore = index;
+        startMarch();
     }
     private void OnGUI()
     {
