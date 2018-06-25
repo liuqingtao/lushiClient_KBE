@@ -26,6 +26,7 @@ public class singleCardTiaoDisplayController : MonoBehaviour {
     public void click()
     {
         Debug.Log("click id"+index);
+        shoucangManager.main.delCard(index);
     }
 	
 }

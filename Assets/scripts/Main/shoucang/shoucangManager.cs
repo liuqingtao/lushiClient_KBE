@@ -70,6 +70,10 @@ public class shoucangManager : MonoBehaviour {
         }
         state = s;
     }
+    public void updateKzCardDisplay()
+    {
+        kzDisplayManager.manager.setKzCardDisplay(roleType, KzName, kzCardList);
+    }
     public void onChangeKz()
     {
         Debug.Log("收到更新卡组通知");
@@ -77,6 +81,15 @@ public class shoucangManager : MonoBehaviour {
         {
             updateKzDisplay();
         }
+        else
+        {
+            
+        }
+    }
+    public void delCard(int index)
+    {
+        kzCardList.RemoveAt(index);
+        updateKzCardDisplay();
     }
     public void changKz(int index)
     {

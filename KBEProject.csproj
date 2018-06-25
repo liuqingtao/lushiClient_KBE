@@ -309,6 +309,7 @@
     <Compile Include="Assets\kbengine_unity3d_plugins-1.0.0\Profile.cs" />
     <Compile Include="Assets\kbengine_unity3d_plugins-1.0.0\Property.cs" />
     <Compile Include="Assets\kbengine_unity3d_plugins-1.0.0\ScriptModule.cs" />
+    <Compile Include="Assets\marchManager.cs" />
     <Compile Include="Assets\scripts\card\cardDisplayController.cs" />
     <Compile Include="Assets\scripts\common\common.cs" />
     <Compile Include="Assets\scripts\common\define.cs" />

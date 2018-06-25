@@ -30,22 +30,25 @@ public class heroOrKzDisplayManager : MonoBehaviour {
     public void okBtn()
     {
         Debug.Log("选择英雄完成,当前选择："+ define.HeroCareer[indexStore]);
-        if (state == 0)
+        
+        if(indexStore == -1)
         {
-            if(indexStore == -1)
-            {
-                Debug.Log("未选择英雄，仍为-1");
-                return;
-            }
-            callbackStore(indexStore);
+            Debug.Log("未选择英雄，仍为-1");
+            return;
         }
+        callbackStore(indexStore);
         MainController.main.hkChooseObj.SetActive(false);
     }
 
     public void onClick(int index)
     {
-        heroImage.sprite = common.getHeroSprite(index);
-        heroName.text = define.HeroCareer[index];
+        int heroIndex = index;
+        if (state == 1)
+        {
+            heroIndex = int.Parse(Data.avatarList[index]["roleType"].ToString());
+        }
+        heroImage.sprite = common.getHeroSprite(heroIndex);
+        heroName.text = define.HeroCareer[heroIndex];
         indexStore = index;
     }
     public void setActiveSum(int sum)
@@ -71,6 +74,7 @@ public class heroOrKzDisplayManager : MonoBehaviour {
     }
     public void initHeroDisplay(Action<int> callback)
     {
+        Debug.Log("初始化英雄选择界面");
         state = 0;
         setActiveSum(9);
         for(int i = 0; i < 9; i++)
@@ -79,6 +83,22 @@ public class heroOrKzDisplayManager : MonoBehaviour {
         }
         callbackStore = callback;
     }
-    
+    public void initKzDisplay(Action<int> callback)
+    {
+        Debug.Log("初始化卡组选择界面");
+        state = 1;
+
+        int kzSum = Data.avatarList.Count;
+        if (kzSum > 9) kzSum = 9;
+        setActiveSum(kzSum);
+        List<Dictionary<string, object>> ls = Data.avatarList;
+        for(int i = 0; i < kzSum; i++)
+        {
+            string kzName = ls[i]["name"].ToString();
+            int roleType = int.Parse(ls[i]["roleType"].ToString());
+            hkList[i].GetComponent<singleHeroOrKzController>().setImageAndName(roleType, kzName);
+        }
+        callbackStore = callback;
+    }
 
 }
