@@ -13,6 +13,10 @@ public class common : MonoBehaviour {
         }
         return spr;
     }
+    public static Sprite getCardSprite(string cardID)
+    {
+        return getCardSprite(uint.Parse(cardID));
+    }
     public static Sprite getHeroSprite(int index,string type = "")
     {
 
@@ -41,5 +45,19 @@ public class common : MonoBehaviour {
             lsuint.Add(uint.Parse(ls[i].ToString()));
         }
         return lsuint;
+    }
+    public static string getCardDes(object cardID)
+    {
+        uint id = uint.Parse(cardID.ToString());
+        string des = "";
+        des = Data.data.card[id]["des"].ToString();
+        return des;
+    }
+    public static string getCardName(object cardID)
+    {
+        uint id = uint.Parse(cardID.ToString());
+        string name = "";
+        name = Data.data.card[id]["name"].ToString();
+        return name;
     }
 }
