@@ -10,7 +10,7 @@ public class loginController : MonoBehaviour {
 
     public InputField id;
     public InputField password;
-    public bool autoLogin = false;
+    public bool autoLogin=true;
     public void login()
     {
         Debug.LogFormat("尝试登陆：用户名：{0} 密码 {1}", id.text, password.text);
@@ -22,11 +22,24 @@ public class loginController : MonoBehaviour {
     }
     private void Start()
     {
+        
         KBEngine.Event.registerOut("onLoginFailed", this, "onLoginFailed");
         KBEngine.Event.registerOut("onLoginSuccessfully", this, "onLoginSuccessfully");
+        string path = Application.streamingAssetsPath;
+        string idAdd = "2";
+        if (path.Contains("2"))
+        {
+
+        }
+        else
+        {
+            idAdd = "";
+        }
+        
         if (autoLogin == true)
         {
-            KBEngine.Event.fireIn("login", "lqt01", "111111", System.Text.Encoding.UTF8.GetBytes("PC"));
+            KBEngine.Event.fireIn("login", "lqt01"+idAdd, "111111", System.Text.Encoding.UTF8.GetBytes("PC"));
+           
         }
        
     }
