@@ -319,6 +319,7 @@
     <Compile Include="Assets\scripts\battlefield\entity\singleHeroController.cs" />
     <Compile Include="Assets\scripts\battlefield\entity\singleHeroSkillController.cs" />
     <Compile Include="Assets\scripts\battlefield\entity\singleWeaponController.cs" />
+    <Compile Include="Assets\scripts\battlefield\followerManager.cs" />
     <Compile Include="Assets\scripts\card\cardDisplayController.cs" />
     <Compile Include="Assets\scripts\common\common.cs" />
     <Compile Include="Assets\scripts\common\define.cs" />
