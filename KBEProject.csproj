@@ -310,6 +310,7 @@
     <Compile Include="Assets\kbengine_unity3d_plugins-1.0.0\Property.cs" />
     <Compile Include="Assets\kbengine_unity3d_plugins-1.0.0\ScriptModule.cs" />
     <Compile Include="Assets\marchManager.cs" />
+    <Compile Include="Assets\scripts\battlefield\cardManager.cs" />
     <Compile Include="Assets\scripts\battlefield\crystal\crystalDisplayController.cs" />
     <Compile Include="Assets\scripts\battlefield\crystal\crystalManager.cs" />
     <Compile Include="Assets\scripts\battlefield\entity\clientEntity.cs" />

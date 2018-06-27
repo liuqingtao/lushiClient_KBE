@@ -31,11 +31,5 @@ public class cardDisplayController : MonoBehaviour {
     {
         
     }
-    private void OnGUI()
-    {
-        if (Input.GetKey(KeyCode.P))
-        {
-            setCard(10000001);
-        }
-    }
+   
 }
