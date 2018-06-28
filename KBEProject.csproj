@@ -310,6 +310,7 @@
     <Compile Include="Assets\kbengine_unity3d_plugins-1.0.0\Property.cs" />
     <Compile Include="Assets\kbengine_unity3d_plugins-1.0.0\ScriptModule.cs" />
     <Compile Include="Assets\marchManager.cs" />
+    <Compile Include="Assets\scripts\battlefield\BFcontroller.cs" />
     <Compile Include="Assets\scripts\battlefield\cardManager.cs" />
     <Compile Include="Assets\scripts\battlefield\crystal\crystalDisplayController.cs" />
     <Compile Include="Assets\scripts\battlefield\crystal\crystalManager.cs" />
@@ -325,8 +326,9 @@
     <Compile Include="Assets\scripts\common\define.cs" />
     <Compile Include="Assets\scripts\common\sort.cs" />
     <Compile Include="Assets\scripts\Data.cs" />
+    <Compile Include="Assets\scripts\kbe\Account.cs" />
+    <Compile Include="Assets\scripts\kbe\Avatar.cs" />
     <Compile Include="Assets\scripts\kbe\client.cs" />
-    <Compile Include="Assets\scripts\login\Account.cs" />
     <Compile Include="Assets\scripts\login\loginController.cs" />
     <Compile Include="Assets\scripts\Main\heroAndKzChoose\heroOrKzDisplayManager.cs" />
     <Compile Include="Assets\scripts\Main\heroAndKzChoose\singleHeroOrKzController.cs" />

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainController : MonoBehaviour {
     public static MainController main;
@@ -21,6 +22,7 @@ public class MainController : MonoBehaviour {
     void Start () {
         //控制名称设置部分的显示
         StartCoroutine(setNameDisplay());
+        KBEngine.Event.registerOut("enterBattlefield", this, "enterBattlefield");
         
     }
     private void OnEnable()
@@ -93,5 +95,9 @@ public class MainController : MonoBehaviour {
     public void taskBtn()
     {
         Debug.Log("taskBtn");
+    }
+    public void enterBattlefield()
+    {
+        SceneManager.LoadScene(2);
     }
 }
