@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scence/Main.unity
     guid: 25c696d36fcb2a0438c880da107f6f3d
+  - enabled: 1
+    path: Assets/scence/battlefield.unity
+    guid: 67fdd6eae90032144b4686e40603e045
