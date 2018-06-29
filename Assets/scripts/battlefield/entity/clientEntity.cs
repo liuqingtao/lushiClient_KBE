@@ -1,8 +1,11 @@
-﻿using System.Collections;
+﻿using KBEngine;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class clientEntity : MonoBehaviour {
+    public SceneEntityObject sceneEntity;
 
     public string att = "0";
 
@@ -40,6 +43,27 @@ public class clientEntity : MonoBehaviour {
 
     public bool onUse = false;
     public bool changed = false;
+    public int id
+    {
+        get
+        {
+            if (sceneEntity == null)
+            {
+                return 0;
+            }
+            else
+            {
+                if (sceneEntity.kbentity == null)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return sceneEntity.kbentity.id;
+                }
+            }
+        }
+    }
 
     public void set_pos(object value)
     {
@@ -138,5 +162,43 @@ public class clientEntity : MonoBehaviour {
     public virtual void updateDisplay()
     {
 
+    }
+    public virtual void noDis()
+    {
+
+    }
+    public virtual void onAtt(Int32 targetID)
+    {
+
+    }
+    public void reqUse(int targetID=0)
+    {
+        if(sceneEntity == null)
+        {
+            Debug.LogError("entity为空");
+            return;
+        }
+        cardBase e = sceneEntity.kbentity as cardBase;
+        if (e == null)
+        {
+            Debug.LogError("kbentity为空");
+            return;
+        }
+        e.reqUse(targetID);
+    }
+    public void reqAtt(int targetID=0)
+    {
+        if (sceneEntity == null)
+        {
+            Debug.LogError("entity为空");
+            return;
+        }
+        cardBase e = sceneEntity.kbentity as cardBase;
+        if (e == null)
+        {
+            Debug.LogError("kbentity为空");
+            return;
+        }
+        e.reqAtt(targetID);
     }
 }

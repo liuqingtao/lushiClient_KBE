@@ -315,11 +315,17 @@
     <Compile Include="Assets\scripts\battlefield\crystal\crystalDisplayController.cs" />
     <Compile Include="Assets\scripts\battlefield\crystal\crystalManager.cs" />
     <Compile Include="Assets\scripts\battlefield\entity\clientEntity.cs" />
+    <Compile Include="Assets\scripts\battlefield\entity\followerManagerMain.cs" />
+    <Compile Include="Assets\scripts\battlefield\entity\heroManager.cs" />
+    <Compile Include="Assets\scripts\battlefield\entity\KBEEventProc.cs" />
+    <Compile Include="Assets\scripts\battlefield\entity\SceneEntityObject.cs" />
     <Compile Include="Assets\scripts\battlefield\entity\singleCardController.cs" />
     <Compile Include="Assets\scripts\battlefield\entity\singleFollowerController.cs" />
     <Compile Include="Assets\scripts\battlefield\entity\singleHeroController.cs" />
     <Compile Include="Assets\scripts\battlefield\entity\singleHeroSkillController.cs" />
     <Compile Include="Assets\scripts\battlefield\entity\singleWeaponController.cs" />
+    <Compile Include="Assets\scripts\battlefield\entity\skillManager.cs" />
+    <Compile Include="Assets\scripts\battlefield\entity\weaponManager.cs" />
     <Compile Include="Assets\scripts\battlefield\followerManager.cs" />
     <Compile Include="Assets\scripts\card\cardDisplayController.cs" />
     <Compile Include="Assets\scripts\common\common.cs" />
@@ -328,6 +334,8 @@
     <Compile Include="Assets\scripts\Data.cs" />
     <Compile Include="Assets\scripts\kbe\Account.cs" />
     <Compile Include="Assets\scripts\kbe\Avatar.cs" />
+    <Compile Include="Assets\scripts\kbe\card.cs" />
+    <Compile Include="Assets\scripts\kbe\cardBase.cs" />
     <Compile Include="Assets\scripts\kbe\client.cs" />
     <Compile Include="Assets\scripts\login\loginController.cs" />
     <Compile Include="Assets\scripts\Main\heroAndKzChoose\heroOrKzDisplayManager.cs" />

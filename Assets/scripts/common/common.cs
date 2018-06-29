@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 public class common : MonoBehaviour {
@@ -53,11 +54,22 @@ public class common : MonoBehaviour {
         des = Data.data.card[id]["des"].ToString();
         return des;
     }
+    public static string getCardProperty(object cardID,string property)
+    {
+        uint id = uint.Parse(cardID.ToString());
+        string name = "";
+        name = Data.data.card[id][property].ToString();
+        return name;
+    }
     public static string getCardName(object cardID)
     {
         uint id = uint.Parse(cardID.ToString());
         string name = "";
         name = Data.data.card[id]["name"].ToString();
         return name;
+    }
+    public static bool IsInt(string value)
+    {
+        return Regex.IsMatch(value, @"^[+-]?\d*$");
     }
 }

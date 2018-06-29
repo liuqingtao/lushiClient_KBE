@@ -15,6 +15,15 @@ public class singleWeaponController : clientEntity {
         attText.text = att;
         hpText.text = HP;
         nameText.text = common.getCardName(cardID);
-    } 
+    }
+    public override void noDis()
+    {
+        base.noDis();
+        gameObject.SetActive(false);
+    }
+    private void Start()
+    {
+        noDis();
+    }
 
 }

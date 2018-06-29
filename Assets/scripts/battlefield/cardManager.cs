@@ -9,6 +9,12 @@ public class cardManager : MonoBehaviour {
     public Transform[] areaPoint;
     public Transform useCardPoint;
     public float xOffset;
+    public static cardManager manager;
+
+    private void Awake()
+    {
+        manager = this;
+    }
     private void Start()
     {
         xOffset = (areaPoint[1].position.x - areaPoint[0].position.x)/9;
@@ -31,6 +37,13 @@ public class cardManager : MonoBehaviour {
         obj.transform.SetParent(transform);
         updateCardPostion();
         return obj.GetComponent<singleCardController>();
+    }
+    public void getRenderObj(bool isSelf,SceneEntityObject obj)
+    {
+        if (isSelf)
+        {
+            obj.getRenderObj(initCard());
+        }
     }
     public void removeCard(clientEntity scc)
     {

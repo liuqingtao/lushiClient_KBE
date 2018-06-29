@@ -13,4 +13,9 @@ public class singleHeroSkillController : clientEntity {
         skillImage.sprite = Resources.Load<Sprite>("HeroSkill/" + index);
 
     }
+    public override void noDis()
+    {
+        base.noDis();
+        gameObject.SetActive(false);
+    }
 }

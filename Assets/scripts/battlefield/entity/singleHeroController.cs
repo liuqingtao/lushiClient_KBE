@@ -18,4 +18,13 @@ public class singleHeroController : clientEntity {
 
         GetComponent<Outline>().enabled = (isAbled == "1");
     }
+    public override void noDis()
+    {
+        base.noDis();
+        gameObject.SetActive(false);
+    }
+    public void onClick()
+    {
+        BFcontroller.manager.onClickEntity(this);
+    }
 }

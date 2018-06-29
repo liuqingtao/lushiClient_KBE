@@ -21,11 +21,28 @@ public class followerManager : MonoBehaviour {
         obj.transform.SetParent(transform);
         obj.GetComponent<RectTransform>().sizeDelta = new Vector2(weight, height);
         updateCardPostion();
+        obj.GetComponent<singleFollowerController>().selfManager = this;
         return obj.GetComponent<singleFollowerController>();
+    }
+    public void getRenderObj(SceneEntityObject obj)
+    {
+        obj.getRenderObj(initFollower());
     }
     public void updateCardPostion()
     {
         int sum = followerList.Count;
+        List<GameObject> sortList = new List<GameObject>();
+        for(int i = 0; i < 7; i++)
+        {
+            foreach(GameObject obj in followerList)
+            {
+                if (obj.GetComponent<singleFollowerController>().pos == i.ToString())
+                {
+                    sortList.Add(obj);
+                }
+            }
+            followerList = sortList;
+        }
         for (int i = 0; i < sum; i++)
         {
             followerList[i].transform.position = transform.position + new Vector3(-(followerList.Count / 2.0f - i - 0.5f) * weight, 0, 0);

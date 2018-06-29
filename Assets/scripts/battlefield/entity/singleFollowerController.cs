@@ -12,6 +12,7 @@ public class singleFollowerController : clientEntity {
     public GameObject divineShieldObj;
     public GameObject stealthObj;
     public GameObject enableObj;
+    public followerManager selfManager;
 
     public override void updateDisplay()
     {
@@ -23,5 +24,15 @@ public class singleFollowerController : clientEntity {
         divineShieldObj.SetActive(isDivineShield != "0");
         stealthObj.SetActive(isStealth != "0");
         enableObj.SetActive(isAbled != "0");
+        selfManager.updateCardPostion();
+    }
+    public void onClick()
+    {
+        BFcontroller.manager.onClickEntity(this);
+    }
+    public override void noDis()
+    {
+        base.noDis();
+        selfManager.removeFollower(this);
     }
 }
