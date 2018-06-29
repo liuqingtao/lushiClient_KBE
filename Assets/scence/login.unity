@@ -716,7 +716,7 @@ MonoBehaviour:
   syncPlayer: 1
   threadUpdateHZ: 10
   SEND_BUFFER_MAX: 1460
-  RECV_BUFFER_MAX: 1460
+  RECV_BUFFER_MAX: 14600
   useAliasEntityID: 1
   isOnInitCallPropertysSetMethods: 1
 --- !u!4 &973573407
