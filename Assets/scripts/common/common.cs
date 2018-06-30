@@ -28,6 +28,7 @@ public class common : MonoBehaviour {
         }
         return spr;
     }
+   
     public static List<uint> getCardIDList(int sum = 30)
     {
         List<uint> ls = new List<uint>();

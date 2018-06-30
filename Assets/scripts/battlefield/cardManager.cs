@@ -18,6 +18,7 @@ public class cardManager : MonoBehaviour {
     private void Start()
     {
         xOffset = (areaPoint[1].position.x - areaPoint[0].position.x)/9;
+ 
     }
     public void updateCardPostion()
     {
@@ -30,7 +31,6 @@ public class cardManager : MonoBehaviour {
     }
     public clientEntity initCard()
     {
-        
 
         GameObject obj = Instantiate(cardPrefab) as GameObject;
         cardList.Add(obj);

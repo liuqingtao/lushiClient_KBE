@@ -2929,6 +2929,7 @@ GameObject:
   - component: {fileID: 1182242583}
   - component: {fileID: 1182242584}
   - component: {fileID: 1182242585}
+  - component: {fileID: 1182242586}
   m_Layer: 5
   m_Name: HeroArea
   m_TagString: Untagged
@@ -2990,6 +2991,20 @@ MonoBehaviour:
   skills:
   - {fileID: 1979694339}
   - {fileID: 1753885353}
+--- !u!114 &1182242586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1182242581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4ec13e6a85630e41aef3b0270f59f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heros:
+  - {fileID: 1444135015}
+  - {fileID: 962898012}
 --- !u!1 &1200554681
 GameObject:
   m_ObjectHideFlags: 0

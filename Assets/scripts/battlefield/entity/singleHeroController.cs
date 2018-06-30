@@ -11,7 +11,9 @@ public class singleHeroController : clientEntity {
     public override void updateDisplay()
     {
         base.updateDisplay();
-        heroImage.sprite = common.getCardSprite(cardID);
+        int index = int.Parse(cardID[cardID.Length - 1].ToString());
+
+        heroImage.sprite = common.getHeroSprite(index);
         attText.text = att;
         hpText.text = HP;
         armorText.text = armor;
