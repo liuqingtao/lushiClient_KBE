@@ -68,5 +68,15 @@ public class BFcontroller : MonoBehaviour {
         }
         
     }
-	
+    public void giveUp()
+    {
+        
+        KBEngine.Avatar avatar = KBEngineApp.app.player() as KBEngine.Avatar;
+        if (avatar != null)
+        {
+            avatar.cellCall("reqGiveUp");
+        }
+
+    }
+
 }
