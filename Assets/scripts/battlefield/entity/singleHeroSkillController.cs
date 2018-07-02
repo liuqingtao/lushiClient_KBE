@@ -18,4 +18,16 @@ public class singleHeroSkillController : clientEntity {
         base.noDis();
         gameObject.SetActive(false);
     }
+    public void use()
+    {
+        Debug.Log("出牌");
+        if ((common.getCardProperty(cardID, "needTarget")) == "0")
+        {
+            reqUse(0);
+        }
+        else
+        {
+            BFcontroller.manager.getUseTarget(this);
+        }
+    }
 }
