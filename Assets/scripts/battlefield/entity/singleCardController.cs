@@ -37,6 +37,7 @@ public class singleCardController : clientEntity {
             {
                 BFcontroller.manager.getUseTarget(this);
             }
+            cardManager.manager.updateCardPostion();
         }
     }
 }

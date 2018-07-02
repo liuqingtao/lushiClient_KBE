@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using KBEngine;
+using UnityEngine.SceneManagement;
 
 public class BFcontroller : MonoBehaviour {
     public static BFcontroller manager;
@@ -19,7 +20,8 @@ public class BFcontroller : MonoBehaviour {
         {
             Me.baseCall("reqEnterBattlefield");
         }
-	}
+        KBEngine.Event.registerOut("battleEnd", this, "battleEnd");
+    }
 	
 	public void getUseTarget(clientEntity e)
     {
@@ -76,6 +78,14 @@ public class BFcontroller : MonoBehaviour {
         {
             avatar.cellCall("reqGiveUp");
         }
+
+    }
+    public void battleEnd(object success)
+    {
+        Debug.LogFormat("战斗结束，战斗结果：【{0}】", success);
+        Debug.Log("即将转换场景");
+
+        SceneManager.LoadScene(1);
 
     }
 
