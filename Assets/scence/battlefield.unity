@@ -3579,6 +3579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1309272236}
   - component: {fileID: 1309272237}
+  - component: {fileID: 1309272238}
   m_Layer: 5
   m_Name: followerArea
   m_TagString: Untagged
@@ -3612,6 +3613,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1309272235}
+--- !u!114 &1309272238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309272235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbfba1d32a466f04d8b7d3e7b70058f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followerManagers:
+  - {fileID: 1280728004}
+  - {fileID: 816015385}
 --- !u!1 &1424412741
 GameObject:
   m_ObjectHideFlags: 0

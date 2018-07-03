@@ -20,8 +20,11 @@ public class followerManager : MonoBehaviour {
         followerList.Add(obj);
         obj.transform.SetParent(transform);
         obj.GetComponent<RectTransform>().sizeDelta = new Vector2(weight, height);
-        updateCardPostion();
         obj.GetComponent<singleFollowerController>().selfManager = this;
+        if (obj.GetComponent<singleFollowerController>() == null)
+        {
+            Debug.LogError("返回脚本为空");
+        }
         return obj.GetComponent<singleFollowerController>();
     }
     public void getRenderObj(SceneEntityObject obj)

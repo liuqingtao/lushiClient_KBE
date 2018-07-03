@@ -21,7 +21,7 @@ public class singleHeroSkillController : clientEntity {
     public void use()
     {
         Debug.Log("出牌");
-        if ((common.getCardProperty(cardID, "needTarget")) == "0")
+        if ((common.getCardProperty(cardID, "needTarget")).Contains("0"))
         {
             reqUse(0);
         }
